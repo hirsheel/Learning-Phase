@@ -1,18 +1,25 @@
-num1 = input("Enter Your First Number: "))
-num2 = input("Enter Your Second Number: "))
-op = input("Enter Your Operation; +, -, / (divide), *(multiply): ")
-if (num1, num2) == int:
+num1 = input("Enter Your First Number: ")
+num2 = input("Enter Your Second Number: ")
+
+# Check if both inputs are digits (basic way to check valid numbers)
+if num1.isdigit() and num2.isdigit():
     num1 = int(num1)
     num2 = int(num2)
+
+    op = input("Enter Your Operation (+, -, /, *): ")
+
     if op == "+":
-        print(num1 + num2)
+        print("Result:", num1 + num2)
     elif op == "-":
-        print(num1 - num2)
+        print("Result:", num1 - num2)
     elif op == "/":
-        print(num1 / num2)
+        if num2 == 0:
+            print("Cannot divide by zero, bruh!")
+        else:
+            print("Result:", num1 / num2)
     elif op == "*":
-        print(num1 * num2)
+        print("Result:", num1 * num2)
     else:
-        print("please enter valid operation Bruh!!!")
+        print("Please enter a valid operation, bruh!")
 else:
-    print("Give A Valid Number BRuh!!!")
+    print("Give a valid number, bruh!")
