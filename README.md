@@ -1,4 +1,4 @@
-# learning-phase
+# Learning-phase
 
 **Repository Created:** June 1, 2025
 
