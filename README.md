@@ -13,7 +13,6 @@ Welcome to the **learning-phase** repository! This repository serves as a dedica
 - **Coding Practice:** Exercises and solutions in Python and other languages as I expand my skill set.
 - **Project Examples:** Small to medium scale projects demonstrating core programming principles.
 - **Git & GitHub Usage:** Hands-on examples of version control workflows and collaboration techniques.
-- **Documentation & Notes:** Clear explanations of concepts, commands, and development best practices.
 
 ---
 
@@ -28,7 +27,7 @@ Welcome to the **learning-phase** repository! This repository serves as a dedica
 
 ## Technologies Used
 
-- **Languages:** Python, JavaScript (and more in the future)
+- **Languages:** Python (and more in the future)
 - **Tools:** Git, GitHub, VS Code, Jupyter Notebook
 - **Platforms:** Local development environments and GitHub for repository hosting
 
