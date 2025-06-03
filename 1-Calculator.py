@@ -5,7 +5,6 @@ num2 = input("Enter Your Second Number: ")
 if num1.isdigit() and num2.isdigit():
     num1 = int(num1)
     num2 = int(num2)
-
     op = input("Enter Your Operation (+, -, /, *): ")
 
     if op == "+":
