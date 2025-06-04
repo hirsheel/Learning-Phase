@@ -17,7 +17,7 @@ que = [
 ]
 
 lvl = [5000, 10000, 20000, 40000, 80000, 160000, 320000, 640000, 1250000, 2500000, 5000000, 10000000, 30000000, 70000000]
-safe = [40000, 320000, 5000000]
+safe = [40000, 320000, 5000000, 70000000]
 
 money_won = 0
 safe_money = 0
@@ -35,7 +35,7 @@ for i in range(len(que)):
         if ans_num == q[-1]:
             print(" Correct!")
             money_won = lvl[i]
-            if money_won == safe[0] or money_won == safe[1] or money_won == safe[2]:
+            if money_won in safe:
                 safe_money = money_won
         else:
             print(" Wrong answer!")
