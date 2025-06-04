@@ -28,9 +28,9 @@ for i in range(len(que)):
     print(q[0])
     print(f"1. {q[1]}     2. {q[2]}")
     print(f"3. {q[3]}     4. {q[4]}")
-    ans = input("Your answer (1-4): ")
+    ans = input("Your answer (1-4) or Q to quit: ")
 
-    if ans.strip() in ("1", "2", "3", "4"):
+    if ans.strip() in ("1, 2, 3, 4"):
         ans_num = int(ans)
         if ans_num == q[-1]:
             print(" Correct!")
@@ -40,6 +40,10 @@ for i in range(len(que)):
         else:
             print(" Wrong answer!")
             break
+    elif ans.strip() in ("Q, q"):
+        print("Thanks For PLaying The Game.")
+        print(f"You havent won anything, how sad lol..") if i < 1 else print(f"You have won {lvl[i-1]}")
+        break
     else:
         print(" Invalid input! Exiting.")
         break
