@@ -30,9 +30,9 @@ for i in range(len(que)):
     print(f"3. {q[3]}     4. {q[4]}")
     ans = input("Your answer (1-4): ")
 
-    if ans == ("1" or "2" or "3" or "4"):
+    if ans.strip() in ("1", "2", "3", "4"):
         ans_num = int(ans)
-        if ans_num == q[5]:
+        if ans_num == q[-1]:
             print(" Correct!")
             money_won = lvl[i]
             if money_won == safe[0] or money_won == safe[1] or money_won == safe[2]:
